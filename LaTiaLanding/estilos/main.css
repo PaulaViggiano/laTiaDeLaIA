@@ -582,6 +582,10 @@ body {
     margin-bottom: 25px;
 }
 
+.pricing-header p {
+    color: var(--gray);
+}
+
 .pricing-card {
     background: linear-gradient(135deg, #fff8f0 0%, #fff1ff 100%);
     padding: 70px;
@@ -594,6 +598,10 @@ body {
     box-shadow: 0 25px 60px rgba(255, 27, 141, 0.2);
 }
 
+.pricing-card h3, ul, p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--dark);
+    }
 .founder-badge {
     position: absolute;
     top: -20px;
