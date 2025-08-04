@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--dark);
     overflow-x: hidden;
@@ -750,49 +750,126 @@ body {
     color: #95a5a6;
 }
 
+.footer-bottom p {
+    color: var(--light-gray);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 80px 0 40px;
+    }
+
     .hero h1 {
-        font-size: 36px;
+        font-size: 32px;
+        line-height: 1.2;
     }
 
     .hero .subtitle {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .nav-links {
         display: none;
     }
 
+    .btn-primary{
+        width: 100%;
+        text-align: center;
+    }
+
     .stats-grid,
     .problem-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 20px;
     }
+    .stat-item {
+    padding: 20px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
 
     .about-content {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 30px;
+        text-align: center;
     }
 
     .credentials {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .roi-calculation {
+        padding: 20px;
+    }
+
+    .calculation-step {
+        font-size: 16px;
+    }
+
+    .roi-result {
+        font-size: 24px;
+    }
+
+    .pricing-card {
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .price-big {
+        font-size: 42px;
+    }
+
+    .pricing-features {
+        padding-left: 20px;
     }
 
     .hero-cta {
         flex-direction: column;
+        gap: 15px;
     }
 
     .footer-content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .infrastructure-layers {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .layer {
-        padding: 30px;
+        padding: 20px;
+    }
+
+    .layer-title {
+        font-size: 20px;
     }
 
     .pricing-card {
         padding: 40px;
+    }
+
+    .hero-video iframe {
+        height: 240px;
     }
 }
 
@@ -898,3 +975,21 @@ a:focus, button:focus {
     outline-offset: 2px;
 }
 
+/* Ajustes para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .infrastructure-layers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
